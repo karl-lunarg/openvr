@@ -19,7 +19,12 @@
 #include <QtGui/QOpenGLContext>
 #include <QtWidgets/QGraphicsScene>
 #include <QOffscreenSurface>
-class QOpenGLFramebufferObject;
+//<<<<<<< HEAD
+//class QOpenGLFramebufferObject;
+//=======
+//#include <QOpenGLFramebufferObject>
+#include <QOpenGLFramebufferObject>
+//>>>>>>> a84cc8b... hacky linux compat, compiles and runs
 
 class COpenVROverlayController : public QObject
 {

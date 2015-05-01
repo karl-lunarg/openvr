@@ -14,6 +14,11 @@
 #include "shared/Matrices.h"
 #include "shared/pathtools.h"
 
+//TODO: proper linux compatibility
+#ifdef __linux__
+#include <shared/linuxcompathack.h>
+#endif
+
 #if defined(POSIX)
 #include "unistd.h"
 #endif
