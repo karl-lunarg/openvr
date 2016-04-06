@@ -17,7 +17,11 @@ using namespace vr;
 #if defined(_WIN32)
 #define HMD_DLL_EXPORT extern "C" __declspec( dllexport )
 #define HMD_DLL_IMPORT extern "C" __declspec( dllimport )
-#elif defined(__GNUC__) || defined(COMPILER_GCC) || defined(__APPLE__)
+//<<<<<<< HEAD
+//#elif defined(__GNUC__) || defined(COMPILER_GCC) || defined(__APPLE__)
+//=======
+#elif defined(__GNUC__) || defined(COMPILER_GCC)
+//>>>>>>> caf21cd... replace GNUC macro with __GNUC__
 #define HMD_DLL_EXPORT extern "C" __attribute__((visibility("default")))
 #define HMD_DLL_IMPORT extern "C" 
 #else
