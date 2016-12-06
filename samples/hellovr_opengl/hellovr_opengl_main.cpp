@@ -1305,7 +1305,8 @@ void CMainApplication::SetupCompanionWindow()
 	vVerts.push_back( VertexDataWindow( Vector2(1, 1), Vector2(1, 0)) );
 
 	GLushort vIndices[] = { 0, 1, 3,   0, 3, 2,   4, 5, 7,   4, 7, 6};
-	m_uiCompanionWindowIndexSize = _countof(vIndices);
+	//m_uiCompanionWindowIndexSize = _countof(vIndices);
+	m_uiCompanionWindowIndexSize = 12;
 
 	glGenVertexArrays( 1, &m_unCompanionWindowVAO );
 	glBindVertexArray( m_unCompanionWindowVAO );
