@@ -7,5 +7,9 @@ set(ARCH "64" CACHE STRING
 set_property(CACHE ARCH PROPERTY STRINGS 32 64)
 
 message(STATUS "Compilation for '${ARCH}' Bit")
+add_definitions ("-DLINUX")
+add_definitions ("-DLINUX64")
+add_definitions ("-DPOSIX")
 
+add_subdirectory (src)
 add_subdirectory (samples/hellovr_opengl)
